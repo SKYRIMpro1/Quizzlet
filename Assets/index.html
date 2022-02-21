@@ -7,21 +7,43 @@
     <link href="style.css" rel="stylesheet"/>
     <title>Quizzlet</title>
 </head>
-<body>
+<body id="background">
     <div id="landingPg">
-        <h1>
+        <h1 id="landingPg" class="title">
             Quizzlet
         </h1>
-        <div>
-            Instructions
+        <div class="question">
+            Click the button below to start the quiz. The quiz is a timed quiz and you have either until the timer runs out or you choose incorrectly. At the end you will be able to log your time with how fast you completed the quiz and how far you got. Good luck and have fun!
         </div>
-        <button id="startBtn">
+        <button id="startBtn" class="button">
             Start Quiz
         </button>
     </div>
-    <div id="Q1" class="hidden">
-        <h1>
+    <div id="Q1" class="hidden Qs">
+        <h1 class="question">
+            Buttons can have event listeners and will trigger a function when clicked. True or False?
+        </h1>
+        <button id="correctBtn" class="button">
+            True
+        </button>
+        <button id="wrongBtn" class="button">
+            False
+        </button>
+    </div>
+    <div id="Q2" class="hidden Qs">
+        <h1 class="question">
             Question
+        </h1>
+        <button class="button">
+            True
+        </button>
+        <button class="button">
+            False
+        </button>
+    </div>
+    <div id="End" class="hidden Qs">
+        <h1 class="question">
+            Womp Womp! Nice try! Lets log your score and see if you can beat it. 
         </h1>
     </div>
 <script src="script.js">
